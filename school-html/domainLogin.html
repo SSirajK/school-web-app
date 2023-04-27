@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LoginSSO</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-left">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Logo">
+                <h3 class="h3">Domain Login</h3>
+            </div>
+            <form id="login-form">
+                <label for="fullName">Domain ID</label>
+                <input type="number" id="domainID" name="domainID" placeholder="Enter Domain ID" required>
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName" placeholder="Enter Company Name" required>
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <span id="password-toggle" class="password-toggle"></span>
+                </div>
+                <div class="remember-me">
+                    <label for="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a style="text-decoration: none; font-size: 16px;" href="/forgotPassword.html" class="forgot-password">Reset Password?</a>
+                </div>
+                <button type="submit" class="primary" size="large">Log in</button>
+            </form>
+            <div class="text-center">
+                <p class="margin-blocks-none">
+                    Don’t have an account yet? <a style="text-decoration: none; font-size: 16px;" href="/signup.html">New Account</a>
+                </p>
+            </div>
+        </div>
+        <div class="login-right">
+            <img class="login-image" src="./images/login.png" alt="Login">
+        </div>
+    </div>
+    <script src="domainLoginscript.js"></script>
+</body>
+
+</html>

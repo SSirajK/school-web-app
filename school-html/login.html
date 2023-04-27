@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-left">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Logo">
+                <h3 class="h3">Log in</h3>
+            </div>
+            <form id="login-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    <span id="password-toggle" class="password-toggle"></span>
+                </div>
+                <div class="remember-me">
+                    <label for="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="/forgotPassword.html" style="text-decoration: none; font-size: 16px;" class="forgot-password">Reset Password?</a>
+                </div>
+                <button type="submit" class="primary" size="large">Log in</button>
+            </form>
+            <div class="margin-blocks-none text-center">
+                <a style="text-decoration: none; font-size: 16px;" href="/loginSSO.html">Login with SSO</a>
+            </div>
+            <hr id="hr" class="margin-blocks-none">
+            <div class="text-center">
+                <p class="margin-blocks-none">
+                    Don’t have an account yet? <a style="text-decoration: none; font-size: 16px;" href="/signup.html">New Account</a>
+                </p>
+            </div>
+        </div>
+        <div class="login-right">
+            <img class="login-image" src="./images/login.png" alt="Login">
+        </div>
+    </div>
+    <script src="loginscript.js"></script>
+</body>
+
+</html>
